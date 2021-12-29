@@ -1,0 +1,38 @@
+#fonctionnement{
+    padding: 15px;
+}
+
+.fonct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a{
+        margin: 20px;
+        border-radius: 15px;
+        background-color: $color-back;
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        box-shadow: $shadow-btn;
+        &:hover{
+            background-color: lighten($color: $color-primary, $amount: 35);
+        }
+        &:hover .fas{
+            color : $color-primary;
+        }
+    }
+    &_btn_num{
+        background-color: $color-primary;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        @include flex-center;
+        align-items: center;
+        color:$color-white;
+        margin-left: -30px;
+        margin-right: 30px;
+    }
+    &_btn_txt{
+        margin-left: 30px;
+    }
+}

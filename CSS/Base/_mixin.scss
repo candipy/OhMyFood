@@ -1,0 +1,16 @@
+@mixin btn {
+    background: $color-btn;
+    color: $color-white;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+@mixin btn-hover{
+    opacity: 60%;
+    box-shadow: $shadow-btn;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}

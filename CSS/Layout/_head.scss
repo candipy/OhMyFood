@@ -1,0 +1,46 @@
+header
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    & h1
+    {
+        font-family: $font-title;
+        font-size: 36px;
+    }
+
+    & p{
+        font-weight: 300;
+        padding-bottom: 15px;
+    }
+    & #header_presentation
+    {
+        background-color: #f6f6f6;
+        padding: 25px;
+    }
+    & a{
+        @include btn;
+        margin-bottom: 40px;
+        &:hover{
+            @include btn-hover;
+        }
+    }    
+}
+
+form
+{
+    background-color: #eaeaea;
+    box-shadow: $shadow-top;
+
+    & input{
+        border : none;
+        background-color: transparent;
+        padding: 15px;
+        font-weight: bold;}
+        & ::placeholder{
+        color:black;
+        text-align: center;
+    
+    }
+}
