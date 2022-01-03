@@ -246,4 +246,36 @@ form ::placeholder {
   right: 25px;
   font-weight: 100;
 }
+
+footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  -webkit-padding-start: 0%;
+          padding-inline-start: 0%;
+}
+
+footer li {
+  padding: 5px 0 5px 0;
+}
+
+footer a, footer a:visited {
+  color: white;
+}
+
+footer .fa-hands-helping {
+  width: 13px;
+  margin-right: 13px;
+}
+
+footer .fa-utensils {
+  margin-right: 13px;
+}
+
+#footer_logo a {
+  font-family: "Shrikhand", cursif;
+}
 /*# sourceMappingURL=main.css.map */
