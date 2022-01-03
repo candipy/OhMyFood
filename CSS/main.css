@@ -21,6 +21,23 @@ a, a:visited {
   text-decoration: none;
 }
 
+#menu header {
+  display: block;
+}
+
+#menu header .header_menus {
+  position: relative;
+}
+
+#menu header a {
+  background: none;
+  color: black;
+  margin-bottom: initial;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +52,7 @@ header {
   text-align: center;
 }
 
-header h1 {
+header .logo {
   font-family: "Shrikhand", cursif;
   font-size: 36px;
 }
