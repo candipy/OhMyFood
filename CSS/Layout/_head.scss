@@ -1,11 +1,10 @@
-header
-{
+    header{
+
     display:flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    & h1
-    {
+    & .logo{
         font-family: $font-title;
         font-size: 36px;
     }
@@ -14,8 +13,7 @@ header
         font-weight: 300;
         padding-bottom: 15px;
     }
-    & #header_presentation
-    {
+    & #header_presentation{
         background-color: #f6f6f6;
         padding: 25px;
     }
@@ -26,7 +24,7 @@ header
             @include btn-hover;
         }
     }    
-}
+    }
 
 form
 {
@@ -44,3 +42,6 @@ form
     
     }
 }
+
+
+

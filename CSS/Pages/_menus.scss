@@ -1,0 +1,18 @@
+#menu{
+    header{
+        display: block;
+        .header_menus{
+            position: relative;
+        }
+        & a {
+            background: none;
+            color: black;
+            margin-bottom: initial;
+            position: absolute;
+            left: 40px;
+            top: 50%;
+
+        }
+
+    }   
+}
