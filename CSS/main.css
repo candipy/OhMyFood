@@ -72,7 +72,7 @@ a, a:visited {
   color: white;
   padding: 15px;
   border-radius: 30px;
-  margin: 40px;
+  margin: 40px 0 50px 0;
   width: 30%;
   text-align: center;
 }
@@ -103,16 +103,6 @@ a, a:visited {
   position: absolute;
   right: 15px;
   top: 50%;
-}
-
-.cards_cont_title {
-  width: 100%;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  -webkit-box-shadow: 3px 8px 8px #bfbfbf;
-          box-shadow: 3px 8px 8px #bfbfbf;
-  background: white;
-  padding: 5px;
 }
 
 header {
@@ -329,6 +319,13 @@ form ::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 3px 8px 8px #bfbfbf;
+          box-shadow: 3px 8px 8px #bfbfbf;
+  background: white;
 }
 
 .cards_cont_title h3, .cards_cont_title p {

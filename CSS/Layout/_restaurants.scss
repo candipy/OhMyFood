@@ -43,6 +43,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
+    @include cadre;
     h3, p{
         margin : 4px 0 0 0;
     }

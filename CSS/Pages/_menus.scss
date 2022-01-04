@@ -34,7 +34,7 @@
     align-items: center;
     & a{
         @include btn;
-        margin: 40px;
+        margin: 40px 0 50px 0;
         width: 30%;
         text-align: center;
         &:hover{
@@ -63,14 +63,7 @@
     }
 }
 
-.cards{
-    &_cont_title{
-        @include cadre;
-        padding: 5px;
-    }
-    
-    
-}
+
 
 
 
