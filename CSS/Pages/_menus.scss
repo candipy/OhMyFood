@@ -11,8 +11,56 @@
             position: absolute;
             left: 40px;
             top: 50%;
-
+            box-shadow: initial;
+            opacity: initial;
         }
+    }
 
-    }   
+    }
+
+.carte_back{
+
+           img{
+               width: 100%;
+               height : 300px;
+               object-fit: cover;
+           }
+        }
+.carte{
+    @include background-grey;
+    border-radius: 25px 25px 0 0 ;
+    margin-top: -40px;
+    position: relative;
+    
 }
+
+.cards{    
+    & .fas{
+        font-weight: 100;
+        @include abso-right
+        top: 50px;
+    }
+    &_bordure{
+        width: 5%;
+    }
+    & h2{
+        text-transform :uppercase;
+        border-bottom: 2px solid $color-tertiary;
+    }
+
+    & span{
+        @include abso-right;
+        top : 50%;
+    }
+}
+
+.cards{
+    &_cont_title{
+        @include cadre;
+        padding: 5px;
+    }
+}
+
+
+
+   

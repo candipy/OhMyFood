@@ -36,6 +36,63 @@ a, a:visited {
   position: absolute;
   left: 40px;
   top: 50%;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+  opacity: initial;
+}
+
+.carte_back img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carte {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 25px 25px 0 0;
+  margin-top: -40px;
+  position: relative;
+}
+
+.cards .fas {
+  font-weight: 100;
+  position: absolute;
+  right: 15px;
+  top: 50px;
+}
+
+.cards_bordure {
+  width: 5%;
+}
+
+.cards h2 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #99E2D0;
+}
+
+.cards span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+}
+
+.cards_cont_title {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 3px 8px 8px #bfbfbf;
+          box-shadow: 3px 8px 8px #bfbfbf;
+  background: white;
+  padding: 5px;
 }
 
 header {
@@ -50,11 +107,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-}
-
-header .logo {
-  font-family: "Shrikhand", cursif;
-  font-size: 36px;
 }
 
 header p {
@@ -80,6 +132,11 @@ header a:hover {
   opacity: 60%;
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
           box-shadow: 3px 8px 8px #bfbfbf;
+}
+
+.logo {
+  font-family: "Shrikhand", cursif;
+  font-size: 36px;
 }
 
 form {
@@ -135,7 +192,7 @@ form ::placeholder {
 .fonct a {
   margin: 20px;
   border-radius: 15px;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +235,7 @@ form ::placeholder {
   margin-left: 30px;
 }
 
-#restaurants {
+.restaurants {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +244,7 @@ form ::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f6f6f6;
+  background: #f2f2f2;
 }
 
 .cards {
@@ -202,14 +259,15 @@ form ::placeholder {
 }
 
 .cards_cont {
-  height: 300px;
   width: 100%;
-  border-radius: 25px;
-  overflow: hidden;
-  position: relative;
+  border-radius: 20px;
   margin-bottom: 15px;
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
           box-shadow: 3px 8px 8px #bfbfbf;
+  background: white;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
 }
 
 .cards_cont_img {
@@ -244,7 +302,6 @@ form ::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 10px 0 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -260,7 +317,7 @@ form ::placeholder {
 
 .cards_cont .fas {
   position: absolute;
-  right: 25px;
+  right: 15px;
   font-weight: 100;
 }
 
