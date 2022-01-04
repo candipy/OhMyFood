@@ -31,7 +31,16 @@
     border-radius: 25px 25px 0 0 ;
     margin-top: -40px;
     position: relative;
-    
+    align-items: center;
+    & a{
+        @include btn;
+        margin: 40px;
+        width: 30%;
+        text-align: center;
+        &:hover{
+            @include btn-hover;
+        }
+    }
 }
 
 .cards{    
@@ -59,6 +68,8 @@
         @include cadre;
         padding: 5px;
     }
+    
+    
 }
 
 
