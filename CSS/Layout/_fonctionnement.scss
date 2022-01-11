@@ -14,7 +14,9 @@
         padding: 15px;
         align-items: center;
         box-shadow: $shadow-btn;
+        transition : all 450MS;
         &:hover{
+            box-shadow: $shadow-btn-hover;
             background-color: lighten($color: $color-primary, $amount: 35);
         }
         &:hover .fas{

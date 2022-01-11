@@ -32,18 +32,11 @@
     margin-top: -40px;
     position: relative;
     align-items: center;
-    & a{
-        @include btn;
-        margin: 40px 0 50px 0;
-        width: 30%;
-        text-align: center;
-        &:hover{
-            @include btn-hover;
-        }
-    }
+
 }
 
-.cards{    
+.cards{ 
+    margin-bottom: 40px;   
     & .fas{
         font-weight: 100;
         @include abso-right;

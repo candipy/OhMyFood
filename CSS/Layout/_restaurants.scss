@@ -12,6 +12,10 @@
     height: 300px;
     overflow: hidden;
     position: relative;
+    transition: all 450ms;
+    &:hover{
+        box-shadow: $shadow-btn-hover;
+    }
     &_img{
         height: 70%;
         &_txt{

@@ -8,19 +8,28 @@
         font-weight: 300;
         padding-bottom: 15px;
     }
-    & #header_presentation{
+    & .header_presentation{
         background-color: #f6f6f6;
         padding: 25px;
-    }
-    & a{
-        @include btn;
-        margin-bottom: 40px;
-        &:hover{
-            @include btn-hover;
+        @include flex-center;
+        align-items: center;
+        flex-direction: column;
+        
         }
-    }    
     }
 
+.btn{
+    @include btn;
+    width: 30%;
+    margin-bottom: 40px;
+    transition: all 450ms;
+    text-align: center;
+
+    &:hover{
+
+    @include btn-hover;
+    }
+}  
 .logo{
         font-family: $font-title;
         font-size: 36px;

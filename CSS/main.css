@@ -1,6 +1,23 @@
 /*couleurs*/
 /*polices*/
 /*styles*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards_cont {
+    width: 30%;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -66,21 +83,8 @@ a, a:visited {
           align-items: center;
 }
 
-.carte a {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  padding: 15px;
-  border-radius: 30px;
-  margin: 40px 0 50px 0;
-  width: 30%;
-  text-align: center;
-}
-
-.carte a:hover {
-  opacity: 60%;
-  -webkit-box-shadow: 3px 8px 8px #bfbfbf;
-          box-shadow: 3px 8px 8px #bfbfbf;
+.cards {
+  margin-bottom: 40px;
 }
 
 .cards .fas {
@@ -124,24 +128,43 @@ header p {
   padding-bottom: 15px;
 }
 
-header #header_presentation {
+header .header_presentation {
   background-color: #f6f6f6;
   padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header a, header a:visited {
+.btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   padding: 15px;
   border-radius: 30px;
-  margin-bottom: 40px;
-}
-
-header a:hover {
-  opacity: 60%;
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
           box-shadow: 3px 8px 8px #bfbfbf;
+  width: 30%;
+  margin-bottom: 40px;
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 70%;
+  -webkit-box-shadow: 5px 10px 8px #bfbfbf;
+          box-shadow: 5px 10px 8px #bfbfbf;
 }
 
 .logo {
@@ -212,9 +235,13 @@ form ::placeholder {
           align-items: center;
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
           box-shadow: 3px 8px 8px #bfbfbf;
+  -webkit-transition: all 450MS;
+  transition: all 450MS;
 }
 
 .fonct a:hover {
+  -webkit-box-shadow: 5px 10px 8px #bfbfbf;
+          box-shadow: 5px 10px 8px #bfbfbf;
   background-color: #f2eafb;
 }
 
@@ -278,6 +305,13 @@ form ::placeholder {
   height: 300px;
   overflow: hidden;
   position: relative;
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
+}
+
+.cards_cont:hover {
+  -webkit-box-shadow: 5px 10px 8px #bfbfbf;
+          box-shadow: 5px 10px 8px #bfbfbf;
 }
 
 .cards_cont_img {
