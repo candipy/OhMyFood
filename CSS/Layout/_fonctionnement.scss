@@ -14,13 +14,16 @@
         padding: 15px;
         align-items: center;
         box-shadow: $shadow-btn;
-        transition : all 450MS;
+        transition : all 450MS ease-in-out;
+        color: black;
         &:hover{
             box-shadow: $shadow-btn-hover;
             background-color: lighten($color: $color-primary, $amount: 35);
+           
         }
         &:hover .fas{
             color : $color-primary;
+            transition : all 450MS ease-in-out;
         }
     }
     &_btn_num{

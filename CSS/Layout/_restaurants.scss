@@ -1,4 +1,4 @@
-.restaurants{
+#restaurants{
     @include background-grey;
 }
 .cards{
@@ -8,6 +8,9 @@
 }
 
 .cards_cont{
+    a{
+        color : black;
+    }
     @include cadre;
     height: 300px;
     overflow: hidden;
@@ -57,4 +60,12 @@
     .fas{
         @include abso-right
         font-weight: 100;
+}
+
+.heart{
+    &::after{
+        content: fas fa-heart fa-lg;
+        color: aqua;
+
+    }
 }

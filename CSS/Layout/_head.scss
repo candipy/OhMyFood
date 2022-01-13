@@ -20,16 +20,23 @@
 
 .btn{
     @include btn;
-    width: 30%;
-    margin-bottom: 40px;
-    transition: all 450ms;
-    text-align: center;
-
-    &:hover{
-
-    @include btn-hover;
+    & a{
+        color: $color-white;
     }
-}  
+    &::after{
+        @include btn-hover;
+    }
+    &:hover {
+
+        &::after{
+        opacity: 1;
+    }
+    
+    }
+}
+
+
+
 .logo{
         font-family: $font-title;
         font-size: 36px;
