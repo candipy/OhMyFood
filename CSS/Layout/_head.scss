@@ -20,9 +20,7 @@
 
 .btn{
     @include btn;
-    & a{
-        color: $color-white;
-    }
+    
     &::after{
         @include btn-hover;
     }

@@ -6,6 +6,7 @@ $color-secondary : #FF79DA;
 $color-tertiary :#99E2D0;
 $color-white : white;
 $color-back:#f2f2f2;
+$color-btn : linear-gradient($color-secondary, $color-primary); 
 
 /*polices*/
 
@@ -15,7 +16,6 @@ $font-title : 'Shrikhand', cursif;
 /*styles*/
 
 $shadow-top : inset 0px 3px 8px #bfbfbf;
-$color-btn : linear-gradient($color-secondary, $color-primary);
 $shadow-btn: 3px 8px 8px #bfbfbf;
 $shadow-btn-hover: 5px 10px 8px #bfbfbf;
 

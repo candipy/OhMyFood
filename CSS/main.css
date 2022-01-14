@@ -103,12 +103,6 @@ a, a:visited {
   border-bottom: 2px solid #99E2D0;
 }
 
-.cards span {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,10 +150,6 @@ header .header_presentation {
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
-}
-
-.btn a {
-  color: white;
 }
 
 .btn::after {
@@ -370,13 +360,12 @@ form ::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   width: 100%;
   border-radius: 20px;
@@ -390,15 +379,72 @@ form ::placeholder {
   margin: 4px 0 0 0;
 }
 
-.cards_cont .fas {
-  position: absolute;
-  right: 15px;
-  font-weight: 100;
+.cards_cont_title_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
-.heart::after {
-  content: fas fa-heart fa-lg;
-  color: aqua;
+.cards_cont_title_heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.cards_cont_title_heart:hover .plein {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards_cont_title_heart:hover .vide {
+  opacity: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cards_cont_title_heart .vide {
+  font-size: 20px;
+  top: 0;
+  -webkit-transition: -webkit-transform 1450ms;
+  transition: -webkit-transform 1450ms;
+  transition: transform 1450ms;
+  transition: transform 1450ms, -webkit-transform 1450ms;
+}
+
+.cards_cont_title_heart .plein {
+  background: -webkit-gradient(linear, right top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  top: 0;
+  color: transparent;
+  font-weight: 900;
+  font-size: 20px;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1450ms;
+  transition: -webkit-transform 1450ms;
+  transition: transform 1450ms;
+  transition: transform 1450ms, -webkit-transform 1450ms;
 }
 
 footer {
