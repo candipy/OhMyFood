@@ -13,9 +13,14 @@
             top: 50%;
             box-shadow: initial;
             opacity: initial;
+            z-index: 1;
         }
     }
-
+    .cards_cont_title_heart{
+        position: absolute;
+        top : 50px;
+        right: 20px;
+    }
     }
 
 .carte_back{

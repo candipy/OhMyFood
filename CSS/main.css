@@ -56,6 +56,13 @@ a, a:visited {
   -webkit-box-shadow: initial;
           box-shadow: initial;
   opacity: initial;
+  z-index: 1;
+}
+
+#menu .cards_cont_title_heart {
+  position: absolute;
+  top: 50px;
+  right: 20px;
 }
 
 .carte_back img {
@@ -228,6 +235,7 @@ header .header_presentation {
 .logo {
   font-family: "Shrikhand", cursif;
   font-size: 36px;
+  position: relative;
 }
 
 form {
