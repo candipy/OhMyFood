@@ -103,6 +103,57 @@ a, a:visited {
   border-bottom: 2px solid #99E2D0;
 }
 
+.croix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  height: 90px;
+  background-color: #99E2D0;
+  color: white;
+  margin-right: -10px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  position: absolute;
+  right: 0;
+}
+
+.croix .far {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.cards_cont_title:hover .croix {
+  -webkit-transition: all  1s;
+  transition: all  1s;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  position: initial;
+}
+
+.cards_cont_title_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-right: 10px;
+  height: 70px;
+  width: 10%;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,7 +407,7 @@ form ::placeholder {
 
 .cards_cont_title {
   position: relative;
-  height: 30%;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,6 +418,8 @@ form ::placeholder {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  overflow: hidden;
+  cursor: pointer;
   width: 100%;
   border-radius: 20px;
   margin-bottom: 15px;
@@ -391,6 +444,20 @@ form ::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  width: 80%;
+  overflow: hidden;
+}
+
+.cards_cont_title_txt h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cards_cont_title_txt h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .cards_cont_title_heart {

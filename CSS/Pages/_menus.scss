@@ -52,6 +52,41 @@
 
 }
 
+.croix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 90px;
+    background-color: $color-tertiary;
+    color: $color-white;
+    margin-right: -10px;
+    transform : scaleX(0);
+    transform-origin: right;
+    position: absolute;
+    right: 0;
+    & .far{
+        font-weight: 900;
+        font-size: 25px;
+    }
+    
+}
+.cards_cont_title{
+    &:hover .croix{
+        transition: all  1s;
+        transform: scaleX(1);
+        position: initial;
+    }
+}
+.cards_cont_title_price{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    margin-right: 10px;
+    height: 70px;
+    width: 10%;
+
+}
 
 
 

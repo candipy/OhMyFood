@@ -46,11 +46,13 @@
 
 .cards_cont_title{
     position: relative;
-    height: 30%;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
     @include cadre;
     h3, p{
         margin : 4px 0 0 0;
@@ -60,8 +62,21 @@
         flex-direction: column;
         justify-content: center;
         height: 100%;
+        width: 80%;
+        overflow: hidden;
+        & h3{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        & h4{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
 
     }
+   
 }
 .cards_cont_title_heart{
     display: flex;
@@ -79,13 +94,11 @@
             opacity : 0;
             transform: scale(1);
             }
- 
     }
     .vide{
 
         font-size: 20px;
         top: 0;
-
         transition: transform 1450ms  ;
         } 
     .plein{
