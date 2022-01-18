@@ -18,6 +18,79 @@
   }
 }
 
+@-webkit-keyframes affichage_menus {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes affichage_menus {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cards_cont_title.up.up {
+  opacity: 0;
+  -webkit-animation-name: affichage_menus;
+          animation-name: affichage_menus;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.cards_cont_title.up.up--1 {
+  -webkit-animation-delay: 222.22222ms;
+          animation-delay: 222.22222ms;
+}
+
+.cards_cont_title.up.up--2 {
+  -webkit-animation-delay: 444.44444ms;
+          animation-delay: 444.44444ms;
+}
+
+.cards_cont_title.up.up--3 {
+  -webkit-animation-delay: 666.66667ms;
+          animation-delay: 666.66667ms;
+}
+
+.cards_cont_title.up.up--4 {
+  -webkit-animation-delay: 888.88889ms;
+          animation-delay: 888.88889ms;
+}
+
+.cards_cont_title.up.up--5 {
+  -webkit-animation-delay: 1111.11111ms;
+          animation-delay: 1111.11111ms;
+}
+
+.cards_cont_title.up.up--6 {
+  -webkit-animation-delay: 1333.33333ms;
+          animation-delay: 1333.33333ms;
+}
+
+.cards_cont_title.up.up--7 {
+  -webkit-animation-delay: 1555.55556ms;
+          animation-delay: 1555.55556ms;
+}
+
+.cards_cont_title.up.up--8 {
+  -webkit-animation-delay: 1777.77778ms;
+          animation-delay: 1777.77778ms;
+}
+
+.cards_cont_title.up.up--9 {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -138,7 +211,7 @@ a, a:visited {
   font-size: 25px;
 }
 
-.cards_cont_title:hover .croix {
+#menu .cards_cont_title:hover .croix {
   -webkit-transition: all  450ms;
   transition: all  450ms;
   -webkit-transform: scaleX(1);
@@ -146,7 +219,7 @@ a, a:visited {
   position: initial;
 }
 
-.cards_cont_title:hover .far {
+#menu .cards_cont_title:hover .far {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition-duration: 450ms;
@@ -488,6 +561,8 @@ form ::placeholder {
   width: 20px;
   height: 20px;
   position: relative;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
 }
 
 .cards_cont_title_heart:active .plein {
