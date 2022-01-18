@@ -139,11 +139,18 @@ a, a:visited {
 }
 
 .cards_cont_title:hover .croix {
-  -webkit-transition: all  1s;
-  transition: all  1s;
+  -webkit-transition: all  450ms;
+  transition: all  450ms;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   position: initial;
+}
+
+.cards_cont_title:hover .far {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 450ms;
+          transition-duration: 450ms;
 }
 
 .cards_cont_title_price {
@@ -483,13 +490,13 @@ form ::placeholder {
   position: relative;
 }
 
-.cards_cont_title_heart:hover .plein {
+.cards_cont_title_heart:active .plein {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.cards_cont_title_heart:hover .vide {
+.cards_cont_title_heart:active .vide {
   opacity: 0;
   -webkit-transform: scale(1);
           transform: scale(1);

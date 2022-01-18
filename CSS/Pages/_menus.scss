@@ -78,9 +78,13 @@
 }
 .cards_cont_title{
     &:hover .croix{
-        transition: all  1s;
+        transition: all  450ms;
         transform: scaleX(1);
         position: initial;
+    }
+    &:hover .far{
+        transform: rotate(360deg);
+        transition-duration: 450ms;
     }
 }
 .cards_cont_title_price{
