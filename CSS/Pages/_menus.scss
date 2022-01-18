@@ -83,11 +83,13 @@
         &:hover .croix{
             transition: all  450ms;
             transform: scaleX(1);
+            transition-delay: (100MS);
             position: initial;
         }
         &:hover .far{
             transform: rotate(360deg);
             transition-duration: 450ms;
+            transition-delay: 100ms;
         }
     }
 }
