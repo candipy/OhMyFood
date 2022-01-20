@@ -31,15 +31,6 @@ $anim-delay : $anim-dur/$num-cards;
     }
 }
 
-
-
-
-
-
-
-
-
-
 $num-letters:8;
 $load-delay:$anim-dur/$num-letters;
 
@@ -47,14 +38,13 @@ $load-delay:$anim-dur/$num-letters;
 @keyframes loader {
     from {
       transform: rotateX(-90deg);
-      background-position: 0%;
+      
     
 
     }
    
     to {
       transform: rotateX(0deg);
-      background-position: 100%;
     }
   }
 
@@ -71,23 +61,26 @@ $load-delay:$anim-dur/$num-letters;
 
     }
 }
-  .load{
+  .loader{
       background: lighten($color-secondary,23);
       width: 100%;
       height: 100%;
       z-index: 100;
       position: fixed;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       animation-name:loader_out;
       animation-fill-mode: forwards;
-      animation-duration: 1s;
-      animation-delay: 2s;
+      animation-duration: 0.5s;
+      animation-delay: 2.5s;
 
 
-
-      &_letter{
+    .load_ohmyfood{
+        display: flex;
+    
+      .load_letter{
         font-size: 40px;
         padding: 6px;
         display: flex;
@@ -100,12 +93,52 @@ $load-delay:$anim-dur/$num-letters;
         transform: rotateX(-90deg);
         transform-origin: bottom;
         animation-name: loader;
-        animation-duration: 1s;
+        animation-duration: $anim-dur/2;
         animation-fill-mode: forwards;
         @for $i from 1 through $num-letters{
             &.up--#{$i} {
-                animation-delay:$anim-delay * $i;
+                animation-delay:$load-delay * $i;
+                }
             }
-      }
+        }
     }
+
+    .load_circle{
+        display: flex;
+    }
+    .load_logo{
+            width: 10px;
+            height: 10px;
+            margin: 10px;
+            background: $color-primary;
+            border-radius: 50%;
+            opacity: 0;
+            transform-origin: bottom;
+            animation-name: load_circle;
+            animation-fill-mode: forwards;
+            @for $i from 1 through $num-letters{
+                &.up--#{$i}{
+                    animation-delay:$load-delay*$i;
+                    animation-duration: $anim-dur/2;
+                }
+            }
+            }
+
+    
+    
 }
+@keyframes load_circle {
+    from {
+      transform: rotateX(-90deg);
+      opacity: 0;
+      
+    
+
+    }
+   
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+      background: $color-secondary;
+    }
+  }
