@@ -1,11 +1,45 @@
-@media screen and (min-width:768px) and (max-width: 991px){
+@media screen and (min-width:992px){
+/*Fonctionnement*/
 
-    .cards{
+
+    h2{
+        text-align: center; 
+    }
+    .header_presentation{
+        padding: 10px;
+    }
+    .fonct{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        &_cont{
+        justify-content: space-around;
+    }
+    .fonct_btn{
             width: 30%;
+        }
+    .btn{
+        margin-bottom: 10px;
+    }
+
+/*Restaurants*/
+
+.cards{
+    flex-direction: row;
+}
+.cards_cont{
+    max-width: 20%;
+
+}
+
+/*Footer*/
+    footer{
+        #footer_logo{
+            text-align: center;
+        }
+    
+        .footer_nav{
+            ul{
+            display: flex;
+            justify-content: space-around;
+            }
         }
     }
 }

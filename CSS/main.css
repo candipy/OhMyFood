@@ -1,20 +1,47 @@
 /*couleurs*/
 /*polices*/
 /*styles*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .cards {
+@media screen and (min-width: 992px) {
+  /*Fonctionnement*/
+  h2 {
+    text-align: center;
+  }
+  .header_presentation {
+    padding: 10px;
+  }
+  .fonct {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fonct_btn {
+    width: 30%;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+  /*Restaurants*/
+  .cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .cards_cont {
-    width: 30%;
+    max-width: 20%;
+  }
+  /*Footer*/
+  footer #footer_logo {
+    text-align: center;
+  }
+  footer .footer_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -509,7 +536,7 @@ header p {
 
 header .header_presentation {
   background-color: #f6f6f6;
-  padding: 25px;
+  padding: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,19 +629,6 @@ form ::placeholder {
   padding: 15px;
 }
 
-.fonct {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .fonct a {
   margin: 20px;
   border-radius: 15px;
@@ -684,10 +698,10 @@ form ::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
 
