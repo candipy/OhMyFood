@@ -1,20 +1,118 @@
+@charset "UTF-8";
 /*couleurs*/
 /*polices*/
 /*styles*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .cards {
+/* Pour Ordinateurs écrans maximum 992px*/
+@media screen and (min-width: 992px) {
+  /*Fonctionnement*/
+  h2 {
+    text-align: center;
+  }
+  .header_presentation {
+    padding: 10px;
+  }
+  .fonct {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fonct_btn {
+    width: 30%;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+  /*Footer*/
+  footer #footer_logo {
+    text-align: center;
+  }
+  footer .footer_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  /*Restaurants*/
+  .cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .cards_cont {
-    width: 30%;
+    max-width: 22%;
+  }
+  /*Menus*/
+  #menu .cards_menu_all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #menu .cards_section {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Pour tablettes écrans entre 768px et 991px*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*Fonctionnement*/
+  h2 {
+    text-align: center;
+  }
+  #fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*Footer*/
+  footer #footer_logo {
+    text-align: center;
+  }
+  footer .footer_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  /*Restaurants*/
+  .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cards_cont {
+    max-width: 45%;
+  }
+  /*Menus*/
+  #menu .cards_section_cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #menu .cards_menu_all {
+    width: 100%;
+  }
+  #menu .up {
+    margin: 7px;
+    width: 32%;
   }
 }
 
@@ -353,9 +451,13 @@ body {
   margin: auto;
 }
 
+p {
+  font-size: 14px;
+}
+
 h2 {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 a, a:visited {
@@ -386,13 +488,13 @@ a, a:visited {
 
 #menu .cards_cont_title_heart {
   position: absolute;
-  top: 50px;
-  right: 20px;
+  top: 47px;
+  right: 10px;
 }
 
 .carte_back img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -435,6 +537,13 @@ a, a:visited {
   border-bottom: 2px solid #99E2D0;
 }
 
+#menu .cards {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .croix {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,7 +555,7 @@ a, a:visited {
       -ms-flex-pack: center;
           justify-content: center;
   width: 0%;
-  height: 90px;
+  height: 70px;
   background-color: #99E2D0;
   color: white;
   margin-right: -10px;
@@ -456,7 +565,7 @@ a, a:visited {
 
 .croix .far {
   font-weight: 900;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 #menu .cards_cont_title:hover .croix {
@@ -484,7 +593,7 @@ a, a:visited {
       -ms-flex-pack: right;
           justify-content: right;
   margin-right: 10px;
-  height: 70px;
+  height: 50px;
   width: 20%;
 }
 
@@ -509,7 +618,7 @@ header p {
 
 header .header_presentation {
   background-color: #f6f6f6;
-  padding: 25px;
+  padding: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,7 +670,7 @@ header .header_presentation {
 
 .logo {
   font-family: "Shrikhand", cursif;
-  font-size: 36px;
+  font-size: 29px;
   position: relative;
 }
 
@@ -600,19 +709,6 @@ form ::placeholder {
 
 #fonctionnement {
   padding: 15px;
-}
-
-.fonct {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .fonct a {
@@ -684,10 +780,10 @@ form ::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
 
@@ -698,7 +794,7 @@ form ::placeholder {
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
           box-shadow: 3px 8px 8px #bfbfbf;
   background: white;
-  height: 300px;
+  height: 280px;
   overflow: hidden;
   position: relative;
   -webkit-transition: all 450ms;
@@ -715,7 +811,7 @@ form ::placeholder {
 }
 
 .cards_cont_img {
-  height: 70%;
+  height: 210px;
 }
 
 .cards_cont_img_txt {
@@ -742,7 +838,7 @@ form ::placeholder {
 
 .cards_cont_title {
   position: relative;
-  height: 90px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,9 +883,10 @@ form ::placeholder {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 16px;
 }
 
-.cards_cont_title_txt h4 {
+.cards_cont_title_txt p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

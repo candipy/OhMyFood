@@ -1,11 +1,124 @@
-@media screen and (min-width:768px) and (max-width: 991px){
+/* Pour Ordinateurs écrans maximum 992px*/
 
-    .cards{
+@media screen and (min-width:992px){
+/*Fonctionnement*/
+
+
+    h2{
+        text-align: center; 
+    }
+    .header_presentation{
+        padding: 10px;
+    }
+    .fonct{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        &_cont{
+        justify-content: space-around;
+    }
+    .fonct_btn{
             width: 30%;
         }
+    .btn{
+        margin-bottom: 10px;
     }
+
+/*Footer*/
+footer{
+    #footer_logo{
+        text-align: center;
+    }
+
+    .footer_nav{
+        ul{
+        display: flex;
+        justify-content: space-around;
+        }
+    }
+}
+
+/*Restaurants*/
+
+.cards{
+    flex-direction: row;
+}
+.cards_cont{
+    max-width: 22%;
+
+}
+
+/*Menus*/
+
+#menu{
+    .cards_menu_all{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cards_section{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+}
+
+/* Pour tablettes écrans entre 768px et 991px*/
+
+@media screen and (min-width:768px) and (max-width: 991px) 
+{
+/*Fonctionnement*/
+
+
+h2{
+    text-align: center; 
+}
+
+#fonctionnement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Footer*/
+footer{
+    #footer_logo{
+        text-align: center;
+    }
+
+    .footer_nav{
+        ul{
+        display: flex;
+        justify-content: space-around;
+        }
+    }
+}
+
+/*Restaurants*/
+
+.cards{
+    flex-direction: row;
+}
+.cards_cont{
+    max-width: 45%;
+
+}
+
+/*Menus*/
+
+#menu{
+
+    
+    .cards_section_cont{
+        display: flex;
+    }
+
+    .cards_menu_all{
+        width: 100%;
+    }
+
+    .up{
+        margin: 7px;
+        width: 32%;
+    }
+}
 }
