@@ -788,6 +788,7 @@ form ::placeholder {
 }
 
 .cards_cont {
+  position: relative;
   width: 100%;
   border-radius: 20px;
   margin-bottom: 15px;
@@ -904,7 +905,10 @@ form ::placeholder {
           align-items: center;
   width: 20px;
   height: 20px;
-  position: relative;
+  position: absolute;
+  right: 12px;
+  bottom: 24px;
+  cursor: pointer;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
 }

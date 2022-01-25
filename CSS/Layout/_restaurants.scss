@@ -9,6 +9,7 @@
 }
 
 .cards_cont{
+    position: relative;
     a{
         color : black;
     }
@@ -86,7 +87,10 @@
     align-items: center;
     width: 20px;
     height: 20px;
-    position: relative;
+    position: absolute;
+    right: 12px;
+    bottom: 24px;
+    cursor: pointer;
     transform-origin: bottom center;
     &:hover{
         & .plein{
