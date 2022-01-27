@@ -559,25 +559,23 @@ a, a:visited {
   background-color: #99E2D0;
   color: white;
   margin-right: -10px;
-  position: absolute;
-  right: 0;
+  -webkit-transition: all  1200ms;
+  transition: all  1200ms;
 }
 
 .croix .far {
   font-weight: 900;
+  -webkit-transition: all  1200ms;
+  transition: all  1200ms;
   font-size: 18px;
 }
 
 #menu .cards_cont_title:hover .croix {
-  -webkit-transition: all  1200ms;
-  transition: all  1200ms;
   width: 20%;
   position: initial;
 }
 
 #menu .cards_cont_title:hover .far {
-  -webkit-transition: all  1200ms;
-  transition: all  1200ms;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -594,7 +592,6 @@ a, a:visited {
           justify-content: right;
   margin-right: 10px;
   height: 50px;
-  width: 20%;
 }
 
 header {
@@ -876,7 +873,9 @@ form ::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  width: 80%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   overflow: hidden;
 }
 
