@@ -559,25 +559,28 @@ a, a:visited {
   background-color: #99E2D0;
   color: white;
   margin-right: -10px;
-  -webkit-transition: all  1200ms;
-  transition: all  1200ms;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
 }
 
 .croix .far {
   font-weight: 900;
-  -webkit-transition: all  1200ms;
-  transition: all  1200ms;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform  1200ms;
+  transition: -webkit-transform  1200ms;
+  transition: transform  1200ms;
+  transition: transform  1200ms, -webkit-transform  1200ms;
   font-size: 18px;
 }
 
 #menu .cards_cont_title:hover .croix {
   width: 20%;
-  position: initial;
 }
 
 #menu .cards_cont_title:hover .far {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .cards_cont_title_price {
@@ -929,10 +932,10 @@ form ::placeholder {
 .cards_cont_title_heart .vide {
   font-size: 20px;
   top: 0;
-  -webkit-transition: -webkit-transform 1450ms;
-  transition: -webkit-transform 1450ms;
-  transition: transform 1450ms;
-  transition: transform 1450ms, -webkit-transform 1450ms;
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
 }
 
 .cards_cont_title_heart .plein {
@@ -947,10 +950,10 @@ form ::placeholder {
   opacity: 0;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  -webkit-transition: -webkit-transform 1450ms;
-  transition: -webkit-transform 1450ms;
-  transition: transform 1450ms;
-  transition: transform 1450ms, -webkit-transform 1450ms;
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
 }
 
 footer {
