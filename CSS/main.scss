@@ -1,6 +1,5 @@
-@import "./Utils/variables";
-@import "./Utils/mediaqueries";
-@import"./Utils/_animations";
+@import "./Utils/_variables";∑
+@import "./Utils/_animations";
 @import "./Base/_bases.scss";
 @import "./Base/_mixin";
 @import "./Pages/menus";
@@ -8,3 +7,4 @@
 @import "./Layout/fonctionnement";
 @import "./Layout/restaurants";
 @import "./Layout/footer";
+@import "./Utils/_mediaqueries";

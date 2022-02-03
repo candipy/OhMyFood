@@ -1,51 +1,49 @@
 @mixin btn {
-    background: $color-btn;
-    padding: 15px 30px 15px 30px;
-    border-radius: 30px;
-    box-shadow: $shadow-btn;
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 1;
- 
+  background: $color-btn;
+  padding: 15px 30px 15px 30px;
+  border-radius: 30px;
+  box-shadow: $shadow-btn;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
 
-@mixin btn-hover{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 0;  
-    border-radius: 30px;
-    background: linear-gradient((lighten($color-secondary,10),lighten($color-primary,10)));
-    box-shadow: $shadow-btn-hover;
-    transition: all 450ms ease-in-out;
-
+@mixin btn-hover {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 30px;
+  background: linear-gradient((lighten($color-secondary, 10), lighten($color-primary, 10)));
+  box-shadow: $shadow-btn-hover;
+  transition: all 450ms ease-in-out;
 }
 
-@mixin flex-center{
-    display: flex;
-    justify-content: center;
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
 }
 
-@mixin background-grey{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    background: $color-back;
+@mixin background-grey {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: $color-back;
 }
 
 @mixin abso-right {
-    position: absolute;
-    right: 15px;
+  position: absolute;
+  right: 15px;
 }
 
-@mixin cadre{
-    width: 100%;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    box-shadow: $shadow-btn;
-    background: white;
+@mixin cadre {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: $shadow-btn;
+  background: white;
 }

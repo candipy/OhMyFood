@@ -1,62 +1,53 @@
-    header{
-
-    display:flex;
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  & p {
+    font-weight: 300;
+    padding-bottom: 15px;
+  }
+  & .header_presentation {
+    background-color: #f6f6f6;
+    padding: 3%;
+    @include flex-center;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
+  }
+}
+
+.btn {
+  @include btn;
+
+  &::after {
+    @include btn-hover;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.logo {
+  font-family: $font-title;
+  font-size: 29px;
+  position: relative;
+  font-weight: normal;
+}
+
+form {
+  background-color: #eaeaea;
+  box-shadow: $shadow-top;
+
+  & input {
+    border: none;
+    background-color: transparent;
+    padding: 15px;
+    font-weight: bold;
+  }
+  & ::placeholder {
+    color: black;
     text-align: center;
-    & p{
-        font-weight: 300;
-        padding-bottom: 15px;
-    }
-    & .header_presentation{
-        background-color: #f6f6f6;
-        padding: 3%;
-        @include flex-center;
-        align-items: center;
-        flex-direction: column;
-        
-        }
-    }
-
-.btn{
-    @include btn;
-    
-    &::after{
-        @include btn-hover;
-    }
-    &:hover {
-
-        &::after{
-        opacity: 1;
-    }
-    
-    }
+  }
 }
-
-
-
-.logo{
-        font-family: $font-title;
-        font-size: 29px;
-        position: relative;
-    }
-
-form
-{
-    background-color: #eaeaea;
-    box-shadow: $shadow-top;
-
-    & input{
-        border : none;
-        background-color: transparent;
-        padding: 15px;
-        font-weight: bold;}
-        & ::placeholder{
-        color:black;
-        text-align: center;
-    
-    }
-}
-
-
-

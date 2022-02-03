@@ -1,144 +1,125 @@
 @keyframes affichage_menus {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-
-    }
-    
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-$num-cards : 10;
+$num-cards: 10;
 $anim-dur: 2000ms;
-$anim-delay : $anim-dur/$num-cards;
+$anim-delay: $anim-dur/$num-cards;
 
-
-
-.cards_cont_title{
-    &.up{
-        &.up{
-
-            opacity : 0;
-            animation-name: affichage_menus;
-            animation-duration: $anim-dur;
-            animation-fill-mode: forwards;
-            @for $i from 1 through $num-cards{
-                &--#{$i} {
-                    animation-delay:$anim-delay * $i;
-                }
-            }
+.cards_cont_title {
+  &.up {
+    &.up {
+      opacity: 0;
+      animation-name: affichage_menus;
+      animation-duration: $anim-dur;
+      animation-fill-mode: forwards;
+      @for $i from 1 through $num-cards {
+        &--#{$i} {
+          animation-delay: $anim-delay * $i;
         }
+      }
     }
+  }
 }
 
-$num-letters:8;
-$load-delay:$anim-dur/$num-letters;
-
+$num-letters: 8;
+$load-delay: $anim-dur/$num-letters;
 
 @keyframes loader {
-    from {
-      transform: rotateX(-90deg);
-      
-    
+  from {
+    transform: rotateX(-90deg);
+  }
 
-    }
-   
-    to {
-      transform: rotateX(0deg);
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes loader_out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loader {
+  background: lighten($color-secondary, 23);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: loader_out;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+
+  .load_ohmyfood {
+    display: flex;
+
+    .load_letter {
+      font-size: 40px;
+      padding: 6px;
+      display: flex;
+      justify-content: space-around;
+      font-family: $font-title;
+      background: -webkit-linear-gradient(top, $color-tertiary, $color-primary, $color-secondary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transform: rotateX(-90deg);
+      transform-origin: bottom;
+      animation-name: loader;
+      animation-duration: $anim-dur/2;
+      animation-fill-mode: forwards;
+      @for $i from 1 through $num-letters {
+        &.up--#{$i} {
+          animation-delay: $load-delay * $i;
+        }
+      }
     }
   }
 
-
-@keyframes loader_out{
-    0%{
-        opacity: 1;
-
-    }
-
-    100%{
-        opacity: 0;
-        visibility: hidden;
-
-    }
-}
-  .loader{
-      background: lighten($color-secondary,23);
-      width: 100%;
-      height: 100%;
-      z-index: 100;
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      animation-name:loader_out;
-      animation-fill-mode: forwards;
-      animation-duration: 0.5s;
-      animation-delay: 2.5s;
-
-
-    .load_ohmyfood{
-        display: flex;
-    
-      .load_letter{
-        font-size: 40px;
-        padding: 6px;
-        display: flex;
-        justify-content: space-around;
-        font-family: $font-title;
-        background:-webkit-linear-gradient(top,$color-tertiary,$color-primary,$color-secondary);
-        background-clip:text;
-        -webkit-background-clip:text;
-        color:transparent;
-        transform: rotateX(-90deg);
-        transform-origin: bottom;
-        animation-name: loader;
+  .load_circle {
+    display: flex;
+  }
+  .load_logo {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background: $color-primary;
+    border-radius: 50%;
+    opacity: 0;
+    transform-origin: bottom;
+    animation-name: load_circle;
+    animation-fill-mode: forwards;
+    @for $i from 1 through $num-letters {
+      &.up--#{$i} {
+        animation-delay: $load-delay * $i;
         animation-duration: $anim-dur/2;
-        animation-fill-mode: forwards;
-        @for $i from 1 through $num-letters{
-            &.up--#{$i} {
-                animation-delay:$load-delay * $i;
-                }
-            }
-        }
+      }
     }
-
-    .load_circle{
-        display: flex;
-    }
-    .load_logo{
-            width: 10px;
-            height: 10px;
-            margin: 10px;
-            background: $color-primary;
-            border-radius: 50%;
-            opacity: 0;
-            transform-origin: bottom;
-            animation-name: load_circle;
-            animation-fill-mode: forwards;
-            @for $i from 1 through $num-letters{
-                &.up--#{$i}{
-                    animation-delay:$load-delay*$i;
-                    animation-duration: $anim-dur/2;
-                }
-            }
-            }
-
-    
-    
+  }
 }
 @keyframes load_circle {
-    from {
-      transform: rotateX(-90deg);
-      opacity: 0;
-      
-    
-
-    }
-   
-    to {
-      transform: rotateX(0deg);
-      opacity: 1;
-      background: $color-secondary;
-    }
+  from {
+    transform: rotateX(-90deg);
+    opacity: 0;
   }
+
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+    background: $color-secondary;
+  }
+}

@@ -1,117 +1,99 @@
-#menu{
-    header{
-        display: block;
-        .header_menus{
-            position: relative;
-        }
-        & a {
-            background: none;
-            color: black;
-            margin-bottom: initial;
-            position: absolute;
-            left: 40px;
-            top: 50%;
-            box-shadow: initial;
-            opacity: initial;
-            z-index: 1;
-        }
+#menu {
+  header {
+    display: block;
+    .header_menus {
+      position: relative;
     }
-    .cards_cont_title_heart{
-        position: absolute;
-        top : 47px;
-        right: 10px;
+    & a {
+      background: none;
+      color: black;
+      margin-bottom: initial;
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      box-shadow: initial;
+      opacity: initial;
+      z-index: 1;
     }
-    }
-
-.carte_back{
-
-           img{
-               width: 100%;
-               height : 250px;
-               object-fit: cover;
-           }
-        }
-.carte{
-    @include background-grey;
-    border-radius: 25px 25px 0 0 ;
-    margin-top: -40px;
-    position: relative;
-    align-items: center;
-
+  }
+  .cards_cont_title_heart {
+    position: absolute;
+    top: 47px;
+    right: 10px;
+  }
 }
 
-
-.cards{ 
-    margin-bottom: 40px;   
-    & .fas{
-        font-weight: 100;
-        @include abso-right;
-        top: 50px;
-    }
-    &_bordure{
-        width: 5%;
-    }
-    & h2{
-        text-transform :uppercase;
-        border-bottom: 2px solid $color-tertiary;
-    }
-
+.carte_back {
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
 }
-#menu{
-    .cards{
-        flex-direction: column;
-    }
+.carte {
+  @include background-grey;
+  border-radius: 25px 25px 0 0;
+  margin-top: -40px;
+  position: relative;
+  align-items: center;
 }
 
-.croix{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 0%;
-    height: 70px;
-    background-color: $color-tertiary;
-    color: $color-white;
-    margin-right: -10px;
-    transition: width 500ms;
-    & .far{
-        font-weight: 900;
-        transform: rotate(180deg);
-        transition: transform  1200ms;
-        font-size: 18px;
-    }
-    
+.cards {
+  margin-bottom: 40px;
+  & .fas {
+    font-weight: 100;
+    @include abso-right;
+    top: 50px;
+  }
+  &_bordure {
+    width: 5%;
+  }
+  & h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-tertiary;
+  }
 }
-#menu{
-
-    .cards_cont_title{
- 
-        &:hover{
-
-            .croix{
-
-            width: 20%;
-
-            }
-            .far{
-
-            transform: rotate(0);
-            }
-        }
-    }
-}   
-
-.cards_cont_title_price{
-    display: flex;
-    font-weight: 700;
-    align-items: flex-end;
-    justify-content: right;
-    margin-right: 10px;
-    height: 50px;
-
+#menu {
+  .cards {
+    flex-direction: column;
+  }
 }
 
+.croix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  height: 70px;
+  background-color: $color-tertiary;
+  color: $color-white;
+  margin-right: -10px;
+  transition: width 500ms;
+  & .far {
+    font-weight: 900;
+    transform: rotate(360deg);
+    transition: transform 1200ms;
+    font-size: 18px;
+  }
+}
+#menu {
+  .cards_cont_title {
+    &:hover {
+      .croix {
+        width: 20%;
+      }
+      .far {
+        transform: rotate(0);
+      }
+    }
+  }
+}
 
-
-
-
-   
+.cards_cont_title_price {
+  display: flex;
+  font-weight: 700;
+  align-items: flex-end;
+  justify-content: right;
+  margin-right: 10px;
+  height: 50px;
+}

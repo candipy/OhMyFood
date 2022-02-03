@@ -1,130 +1,122 @@
-#restaurants{
-    @include background-grey;
+#restaurants {
+  @include background-grey;
 }
-.cards{
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cards_cont {
+  position: relative;
+  a {
+    color: black;
+  }
+  @include cadre;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  transition: all 450ms;
+  &:hover {
+    box-shadow: $shadow-btn-hover;
+  }
+  &_img {
+    height: 210px;
+    &_txt {
+      position: absolute;
+      margin: 1%;
+      top: 15px;
+      right: 15px;
+      background: $color-tertiary;
+      p {
+        color: darken($color: $color-tertiary, $amount: 30);
+        padding: 8px;
+        margin: 0;
+        text-align: center;
+      }
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.cards_cont_title {
+  position: relative;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  @include cadre;
+  h3,
+  p {
+    margin: 4px 0 0 0;
+  }
+  &_txt {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.cards_cont{
-    position: relative;
-    a{
-        color : black;
-    }
-    @include cadre;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    transition: all 450ms;
-    &:hover{
-        box-shadow: $shadow-btn-hover;
-    }
-    &_img{
-        height: 210px;
-        &_txt{
-            position: absolute;
-            margin: 1%;
-            top : 15px;
-            right: 15px;
-            background: $color-tertiary;
-            p{
-                color: darken($color: $color-tertiary, $amount: 30);
-                padding: 8px;
-                margin: 0;
-                text-align: center;
-            }
-            
-        }
-       img{
-           object-fit: cover;
-           width: 100%;
-           height: 100%;
-       }
-    }
-
-}
-
-.cards_cont_title{
-    position: relative;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    @include cadre;
-    h3, p{
-        margin : 4px 0 0 0;
-    }
-    &_txt{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        flex: 1;
-        overflow: hidden;
-        & h3{
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            font-size: 16px;
-        }
-        & p{
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-    }
-   
-}
-.cards_cont_title_heart{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 12px;
-    bottom: 24px;
-    cursor: pointer;
-    transform-origin: bottom center;
-    &:hover{
-        & .plein{
-        opacity : 1;
-        transform: scaleY(1);
-        transform-origin: bottom center;
-        }
-        & .vide{
-            opacity : 0;
-            transform: scale(1);
-            }
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    & h3 {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 16px;
     }
-    .vide{
-
-        font-size: 20px;
-        top: 0;
-        transition: transform 1000ms  ;
-        } 
-    .plein{
-            background: linear-gradient(to bottom left, #9356dc, #ff79da);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            top : 0;
-
-            color: transparent;
-            font-weight: 900;
-            font-size: 20px;
-            opacity : 0;
-            transform: scaleY(0);
-            transition: transform 1000ms  ;
-
-       
+    & p {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
+  }
 }
+.cards_cont_title_heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 12px;
+  bottom: 24px;
+  cursor: pointer;
+  transform-origin: bottom center;
+  &:hover {
+    & .plein {
+      opacity: 1;
+      transform: scaleY(1);
+      transform-origin: bottom center;
+    }
+    & .vide {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  .vide {
+    font-size: 20px;
+    top: 0;
+    transition: transform 1000ms;
+  }
+  .plein {
+    background: linear-gradient(to bottom left, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    top: 0;
 
-
+    color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: transform 1000ms;
+  }
+}
