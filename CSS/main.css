@@ -21,82 +21,82 @@
 .cards_cont_title.up.up {
   opacity: 0;
   -webkit-animation-name: affichage_menus;
-  animation-name: affichage_menus;
+          animation-name: affichage_menus;
   -webkit-animation-duration: 2000ms;
-  animation-duration: 2000ms;
+          animation-duration: 2000ms;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .cards_cont_title.up.up--1 {
   -webkit-animation-delay: 200ms;
-  animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 
 .cards_cont_title.up.up--2 {
   -webkit-animation-delay: 400ms;
-  animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 
 .cards_cont_title.up.up--3 {
   -webkit-animation-delay: 600ms;
-  animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .cards_cont_title.up.up--4 {
   -webkit-animation-delay: 800ms;
-  animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 
 .cards_cont_title.up.up--5 {
   -webkit-animation-delay: 1000ms;
-  animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 .cards_cont_title.up.up--6 {
   -webkit-animation-delay: 1200ms;
-  animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 
 .cards_cont_title.up.up--7 {
   -webkit-animation-delay: 1400ms;
-  animation-delay: 1400ms;
+          animation-delay: 1400ms;
 }
 
 .cards_cont_title.up.up--8 {
   -webkit-animation-delay: 1600ms;
-  animation-delay: 1600ms;
+          animation-delay: 1600ms;
 }
 
 .cards_cont_title.up.up--9 {
   -webkit-animation-delay: 1800ms;
-  animation-delay: 1800ms;
+          animation-delay: 1800ms;
 }
 
 .cards_cont_title.up.up--10 {
   -webkit-animation-delay: 2000ms;
-  animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 @-webkit-keyframes loader {
   from {
     -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
   }
   to {
     -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
 }
 
 @keyframes loader {
   from {
     -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
   }
   to {
     -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
 }
 
@@ -131,22 +131,22 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-animation-name: loader_out;
-  animation-name: loader_out;
+          animation-name: loader_out;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .loader .load_ohmyfood {
@@ -162,62 +162,62 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   font-family: "Shrikhand", cursif;
   background: -webkit-linear-gradient(top, #99e2d0, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
   -webkit-transform-origin: bottom;
-  transform-origin: bottom;
+          transform-origin: bottom;
   -webkit-animation-name: loader;
-  animation-name: loader;
+          animation-name: loader;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .loader .load_ohmyfood .load_letter.up--1 {
   -webkit-animation-delay: 250ms;
-  animation-delay: 250ms;
+          animation-delay: 250ms;
 }
 
 .loader .load_ohmyfood .load_letter.up--2 {
   -webkit-animation-delay: 500ms;
-  animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 .loader .load_ohmyfood .load_letter.up--3 {
   -webkit-animation-delay: 750ms;
-  animation-delay: 750ms;
+          animation-delay: 750ms;
 }
 
 .loader .load_ohmyfood .load_letter.up--4 {
   -webkit-animation-delay: 1000ms;
-  animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 .loader .load_ohmyfood .load_letter.up--5 {
   -webkit-animation-delay: 1250ms;
-  animation-delay: 1250ms;
+          animation-delay: 1250ms;
 }
 
 .loader .load_ohmyfood .load_letter.up--6 {
   -webkit-animation-delay: 1500ms;
-  animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .loader .load_ohmyfood .load_letter.up--7 {
   -webkit-animation-delay: 1750ms;
-  animation-delay: 1750ms;
+          animation-delay: 1750ms;
 }
 
 .loader .load_ohmyfood .load_letter.up--8 {
   -webkit-animation-delay: 2000ms;
-  animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 .loader .load_circle {
@@ -234,78 +234,78 @@
   border-radius: 50%;
   opacity: 0;
   -webkit-transform-origin: bottom;
-  transform-origin: bottom;
+          transform-origin: bottom;
   -webkit-animation-name: load_circle;
-  animation-name: load_circle;
+          animation-name: load_circle;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .loader .load_logo.up--1 {
   -webkit-animation-delay: 250ms;
-  animation-delay: 250ms;
+          animation-delay: 250ms;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .loader .load_logo.up--2 {
   -webkit-animation-delay: 500ms;
-  animation-delay: 500ms;
+          animation-delay: 500ms;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .loader .load_logo.up--3 {
   -webkit-animation-delay: 750ms;
-  animation-delay: 750ms;
+          animation-delay: 750ms;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .loader .load_logo.up--4 {
   -webkit-animation-delay: 1000ms;
-  animation-delay: 1000ms;
+          animation-delay: 1000ms;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .loader .load_logo.up--5 {
   -webkit-animation-delay: 1250ms;
-  animation-delay: 1250ms;
+          animation-delay: 1250ms;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .loader .load_logo.up--6 {
   -webkit-animation-delay: 1500ms;
-  animation-delay: 1500ms;
+          animation-delay: 1500ms;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .loader .load_logo.up--7 {
   -webkit-animation-delay: 1750ms;
-  animation-delay: 1750ms;
+          animation-delay: 1750ms;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .loader .load_logo.up--8 {
   -webkit-animation-delay: 2000ms;
-  animation-delay: 2000ms;
+          animation-delay: 2000ms;
   -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 @-webkit-keyframes load_circle {
   from {
     -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
     opacity: 0;
   }
   to {
     -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
+            transform: rotateX(0deg);
     opacity: 1;
     background: #ff79da;
   }
@@ -314,12 +314,12 @@
 @keyframes load_circle {
   from {
     -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
     opacity: 0;
   }
   to {
     -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
+            transform: rotateX(0deg);
     opacity: 1;
     background: #ff79da;
   }
@@ -327,7 +327,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -344,8 +344,7 @@ h2 {
   font-size: 22px;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
   color: white;
 }
@@ -366,7 +365,7 @@ a:visited {
   left: 40px;
   top: 50%;
   -webkit-box-shadow: initial;
-  box-shadow: initial;
+          box-shadow: initial;
   opacity: initial;
   z-index: 1;
 }
@@ -381,7 +380,7 @@ a:visited {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .carte {
@@ -391,15 +390,15 @@ a:visited {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #f2f2f2;
   border-radius: 25px 25px 0 0;
   margin-top: -40px;
   position: relative;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cards {
@@ -425,8 +424,8 @@ a:visited {
 #menu .cards {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .croix {
@@ -434,11 +433,11 @@ a:visited {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 0%;
   height: 70px;
   background-color: #99e2d0;
@@ -451,7 +450,7 @@ a:visited {
 .croix .far {
   font-weight: 900;
   -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+          transform: rotate(360deg);
   -webkit-transition: -webkit-transform 1200ms;
   transition: -webkit-transform 1200ms;
   transition: transform 1200ms;
@@ -465,7 +464,7 @@ a:visited {
 
 #menu .cards_cont_title:hover .far {
   -webkit-transform: rotate(0);
-  transform: rotate(0);
+          transform: rotate(0);
 }
 
 .cards_cont_title_price {
@@ -474,11 +473,11 @@ a:visited {
   display: flex;
   font-weight: 700;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: right;
-  -ms-flex-pack: right;
-  justify-content: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   margin-right: 10px;
   height: 50px;
 }
@@ -489,11 +488,11 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -509,15 +508,15 @@ header .header_presentation {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btn {
@@ -526,7 +525,7 @@ header .header_presentation {
   padding: 15px 30px 15px 30px;
   border-radius: 30px;
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
-  box-shadow: 3px 8px 8px #bfbfbf;
+          box-shadow: 3px 8px 8px #bfbfbf;
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
@@ -545,7 +544,7 @@ header .header_presentation {
   background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
   background: linear-gradient(#fface8, #ae80e5);
   -webkit-box-shadow: 5px 10px 8px #bfbfbf;
-  box-shadow: 5px 10px 8px #bfbfbf;
+          box-shadow: 5px 10px 8px #bfbfbf;
   -webkit-transition: all 450ms ease-in-out;
   transition: all 450ms ease-in-out;
 }
@@ -564,7 +563,7 @@ header .header_presentation {
 form {
   background-color: #eaeaea;
   -webkit-box-shadow: inset 0px 3px 8px #bfbfbf;
-  box-shadow: inset 0px 3px 8px #bfbfbf;
+          box-shadow: inset 0px 3px 8px #bfbfbf;
 }
 
 form input {
@@ -607,10 +606,10 @@ form ::placeholder {
   display: flex;
   padding: 15px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
-  box-shadow: 3px 8px 8px #bfbfbf;
+          box-shadow: 3px 8px 8px #bfbfbf;
   -webkit-transition: all 450ms ease-in-out;
   transition: all 450ms ease-in-out;
   color: black;
@@ -618,7 +617,7 @@ form ::placeholder {
 
 .fonct a:hover {
   -webkit-box-shadow: 5px 10px 8px #bfbfbf;
-  box-shadow: 5px 10px 8px #bfbfbf;
+          box-shadow: 5px 10px 8px #bfbfbf;
   background-color: #f2eafb;
 }
 
@@ -637,11 +636,11 @@ form ::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   margin-left: -30px;
   margin-right: 30px;
@@ -658,8 +657,8 @@ form ::placeholder {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #f2f2f2;
 }
 
@@ -668,9 +667,9 @@ form ::placeholder {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   width: 100%;
 }
 
@@ -680,7 +679,7 @@ form ::placeholder {
   border-radius: 20px;
   margin-bottom: 15px;
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
-  box-shadow: 3px 8px 8px #bfbfbf;
+          box-shadow: 3px 8px 8px #bfbfbf;
   background: white;
   height: 280px;
   overflow: hidden;
@@ -695,7 +694,7 @@ form ::placeholder {
 
 .cards_cont:hover {
   -webkit-box-shadow: 5px 10px 8px #bfbfbf;
-  box-shadow: 5px 10px 8px #bfbfbf;
+          box-shadow: 5px 10px 8px #bfbfbf;
 }
 
 .cards_cont_img {
@@ -719,7 +718,7 @@ form ::placeholder {
 
 .cards_cont_img img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -731,11 +730,11 @@ form ::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -743,7 +742,7 @@ form ::placeholder {
   border-radius: 20px;
   margin-bottom: 15px;
   -webkit-box-shadow: 3px 8px 8px #bfbfbf;
-  box-shadow: 3px 8px 8px #bfbfbf;
+          box-shadow: 3px 8px 8px #bfbfbf;
   background: white;
 }
 
@@ -758,15 +757,15 @@ form ::placeholder {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   overflow: hidden;
 }
 
@@ -788,11 +787,11 @@ form ::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -800,21 +799,21 @@ form ::placeholder {
   bottom: 24px;
   cursor: pointer;
   -webkit-transform-origin: bottom center;
-  transform-origin: bottom center;
+          transform-origin: bottom center;
 }
 
 .cards_cont_title_heart:hover .plein {
   opacity: 1;
   -webkit-transform: scaleY(1);
-  transform: scaleY(1);
+          transform: scaleY(1);
   -webkit-transform-origin: bottom center;
-  transform-origin: bottom center;
+          transform-origin: bottom center;
 }
 
 .cards_cont_title_heart:hover .vide {
   opacity: 0;
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 
 .cards_cont_title_heart .vide {
@@ -837,7 +836,7 @@ form ::placeholder {
   font-size: 20px;
   opacity: 0;
   -webkit-transform: scaleY(0);
-  transform: scaleY(0);
+          transform: scaleY(0);
   -webkit-transition: -webkit-transform 1000ms;
   transition: -webkit-transform 1000ms;
   transition: transform 1000ms;
@@ -852,15 +851,14 @@ footer {
 footer ul {
   list-style-type: none;
   -webkit-padding-start: 0%;
-  padding-inline-start: 0%;
+          padding-inline-start: 0%;
 }
 
 footer li {
   padding: 5px 0 5px 0;
 }
 
-footer a,
-footer a:visited {
+footer a, footer a:visited {
   color: white;
 }
 
@@ -888,15 +886,15 @@ footer .fa-utensils {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /*Footer*/
   footer #footer_logo {
@@ -907,14 +905,14 @@ footer .fa-utensils {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   /*Restaurants*/
   .cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .cards_cont {
     max-width: 45%;
@@ -948,7 +946,7 @@ footer .fa-utensils {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   .fonct_btn {
     width: 30%;
@@ -965,14 +963,14 @@ footer .fa-utensils {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   /*Restaurants*/
   .cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .cards_cont {
     max-width: 22%;
@@ -987,15 +985,15 @@ footer .fa-utensils {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #menu .cards_menu_all {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
   #menu .up {
     width: 100%;
